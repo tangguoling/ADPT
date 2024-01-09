@@ -51,8 +51,6 @@ During the data preparation phase, we do not provide specific annotation tools. 
 
 We offer a shared training [dataset and videos](data/link.md) for testing purposes. These videos have been instrumental in our analysis of the model's anti-drift capabilities, as discussed in our research paper.
 
-## References
-
 ## License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE.txt) file for details.
