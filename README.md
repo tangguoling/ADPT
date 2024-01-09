@@ -11,6 +11,17 @@ Furthermore, our team applied ADPT to end-to-end multi-animal identity-pose sync
 ## Usage
 
 This tool provides Python scripts for training and predicting behavior videos. Users can simply open the corresponding environment and run the provided code to start training and predicting.
+  
+### Installation
+```bash
+conda create -n ADPT python==3.9
+conda activate ADPT
+pip install tensorflow==2.9.1
+pip install tensorflow-addons==0.17.1
+conda install cudnn==8.2.1
+pip install imgaug
+pip install pandas
+```
 
 ### Training
 - step 1 Modify config.yaml.
@@ -29,16 +40,6 @@ python train.py
 python predict.py
 ```
 - step 4 The prediction files will be saved in the same paths of videos.
-  
-### Dependencies
-
-- python 3.9
-- tensorflow 2.9.1
-- tensorflow-addons 0.17.1
-- cudnn
-- imgaug
-- opencv
-- matplotlib
 
 ### Data Preparation
 
