@@ -23,7 +23,7 @@ This tool provides Python scripts for training and predicting behavior videos. U
 
 ### Data Preparation
 
-During the data preparation phase, we do not provide specific annotation tools. Users can employ the DeepLabCut tool for data annotation and convert the annotations into our required JSON dataset using the [provided code](dlc2adpt.py).
+During the data preparation phase, we do not provide specific annotation tools. Users can employ the DeepLabCut tool for data annotation and convert the annotations into our required JSON dataset using the [provided code](data/dlc2adpt.py).
 
 ### Data 
 
