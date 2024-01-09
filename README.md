@@ -22,6 +22,7 @@ conda install cudnn==8.2.1
 pip install imgaug
 pip install pandas
 pip install pyyaml
+pip install tqdm
 ```
 
 ### Train a model with ADPT
