@@ -5,6 +5,8 @@ Created on Mon Jan  8 18:49:52 2024
 @author: tang
 """
 
+import warnings
+warnings.filterwarnings('ignore')
 from core.predict import predict
 import yaml
 from config.config_training import configuration
