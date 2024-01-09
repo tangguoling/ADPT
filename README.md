@@ -12,7 +12,7 @@ Furthermore, our team applied ADPT to end-to-end multi-animal identity-pose sync
 
 This tool provides Python scripts for training and predicting behavior videos. Users can simply open the corresponding environment and run the provided code to start training and predicting.
   
-### Installation
+### Configure the ADPT virtual environment
 ```bash
 conda create -n ADPT python==3.9
 conda activate ADPT
@@ -23,7 +23,7 @@ pip install imgaug
 pip install pandas
 ```
 
-### Training
+### Train a model with ADPT
 - step 1 Modify config.yaml.
 - step 2 Open a terminal and enter the folder where the train.py is located.
 - step 3 Run train.py and wait for the training to complete.
@@ -32,7 +32,7 @@ python train.py
 ```
 - step 4 The trained model will be saved in the subfolder (model/ADPT/_shuffle_num/cp.ckpt)
 
-### Prediction
+### Use ADPT to predict videos
 - step 1 Modify config_predict.yaml.
 - step 2 Open a terminal and enter the folder where the predict.py is located.
 - step 3 Run predict.py and wait for the prediction to complete.
