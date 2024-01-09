@@ -10,7 +10,7 @@ Furthermore, our team applied ADPT to end-to-end multi-animal identity-pose sync
 
 ## Usage
 
-This tool provides Python scripts for training and predicting behavior videos. Users can simply open the corresponding environment and run the provided code to start training and predicting.
+This tool provides Python scripts for training and predicting behavior videos. Users can simply open the corresponding environment and run the provided code to start training and predicting.  You may need an NVIDIA GPU (RTX2080TI or better) and updated drivers.
   
 ### Configure the ADPT virtual environment
 ```bash
