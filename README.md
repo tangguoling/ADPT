@@ -4,9 +4,9 @@
 
 ## Key Findings
 
-The analysis results demonstrate that ADPT significantly reduces body point drifting in animal pose estimation and outperforms existing deep learning methods such as DeepLabCut, SLEAP, and DeepPoseKit. Additionally, ADPT's anti-drift tracking is unbiased across different individuals and video background conditions, ensuring consistency for subsequent behavioral analyses. In performance evaluations on public datasets, ADPT exhibited higher accuracy in tracking body points, superior performance metrics in terms of required training data, and inference speed.
+The analysis results demonstrate that ADPT significantly reduces body point drifting in animal pose estimation and outperforms existing deep learning methods such as [DeepLabCut](https://github.com/DeepLabCut/DeepLabCut), [SLEAP](https://github.com/talmolab/sleap), and [DeepPoseKit](https://github.com/jgraving/DeepPoseKit). Additionally, ADPT's anti-drift tracking is unbiased across different individuals and video background conditions, ensuring consistency for subsequent behavioral analyses. In performance evaluations on public datasets, ADPT exhibited higher accuracy in tracking body points, superior performance metrics in terms of required training data, and inference speed.
 
-Furthermore, our team applied ADPT to end-to-end multi-animal identity-pose synchronized tracking, achieving over 90% accuracy in identity recognition. This end-to-end approach reduces computational costs compared to methods like ma-DLC, SIPEC, and Social Behavior Atlas, potentially enabling real-time multi-animal behavior analysis.
+Furthermore, our team applied ADPT to end-to-end multi-animal identity-pose synchronized tracking, achieving over 90% accuracy in identity recognition. This end-to-end approach reduces computational costs compared to methods like [ma-DLC](https://github.com/DeepLabCut/DeepLabCut), [SIPEC](https://github.com/SIPEC-Animal-Data-Analysis/SIPEC), and [Social Behavior Atlas](https://github.com/YNCris/SBeA_release), potentially enabling real-time multi-animal behavior analysis.
 
 ## Usage
 
@@ -49,6 +49,8 @@ During the data preparation phase, we do not provide specific annotation tools. 
 ### Provided Training and Test Data
 
 We offer a shared training [dataset and videos](data/link.md) for testing purposes. These videos have been instrumental in our analysis of the model's anti-drift capabilities, as discussed in our research paper.
+
+## References
 
 ## License
 
