@@ -8,7 +8,7 @@ The analysis results demonstrate that ADPT significantly reduces body point drif
 
 Furthermore, our team applied ADPT to end-to-end multi-animal identity-pose synchronized tracking, achieving over 90% accuracy in identity recognition. This end-to-end approach reduces computational costs compared to methods like ma-DLC, SIPEC, and Social Behavior Atlas, potentially enabling real-time multi-animal behavior analysis.
 
-##Usage
+## Usage
 
 This tool provides Python scripts for training and predicting behavior videos. Users can simply open the corresponding environment and run the provided code to start training and predicting.
 
