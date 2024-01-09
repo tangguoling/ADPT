@@ -34,7 +34,7 @@ python train.py
 - step 4 The trained model will be saved in the subfolder (model/ADPT/_shuffle_num/cp.ckpt).
 
 ### Use ADPT to predict videos
-- step 1 Modify config_predict.yaml. You may need to modify the Video_type, Video_path, model_path. Save_predicted_video allows you to control whether save predicted video (True or False).
+- step 1 Modify config_predict.yaml. You may need to modify the Video_type, Video_path (directory), model_path. Please ensure that the videos to be processed have the same size as the original images during model training. Save_predicted_video allows you to control whether save predicted video (True or False).
 - step 2 Open a terminal and enter the folder where the predict.py is located. Please make sure that config.yaml and config_predict.yaml are under the same folder of predict.py because script would read configuration from these files.
 - step 3 Run predict.py and wait for the prediction to complete. 
 ```bash
