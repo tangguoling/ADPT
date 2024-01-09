@@ -44,7 +44,9 @@ python predict.py
 
 During the data preparation phase, we do not provide specific annotation tools. Users can employ the DeepLabCut tool for data annotation and convert the annotations into our required JSON dataset using the [provided code](data/dlc2adpt.py).
 
-### Data 
+### Provided Training and Test Data
+
+We offer a shared training [dataset and videos](data/link.md) for testing purposes. These videos have been instrumental in our analysis of the model's anti-drift capabilities, as discussed in our research paper.
 
 ## License
 
