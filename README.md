@@ -21,6 +21,15 @@ python train.py
 ```
 - step 4 The trained model will be saved in the subfolder (model/ADPT/_shuffle_num/cp.ckpt)
 
+### Prediction
+- step 1 Modify config_predict.yaml.
+- step 2 Open a terminal and enter the folder where the predict.py is located.
+- step 3 Run predict.py and wait for the prediction to complete.
+```bash
+python predict.py
+```
+- step 4 The prediction files will be saved in the same paths of videos.
+  
 ### Dependencies
 
 - python 3.9
