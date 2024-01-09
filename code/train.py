@@ -5,6 +5,8 @@ Created on Mon Jan  8 18:49:52 2024
 @author: tang
 """
 
+import warnings
+warnings.filterwarnings('ignore')
 from core.train import train
 from core.data_aug import data_augmentation
 import yaml
