@@ -21,6 +21,7 @@ pip install tensorflow-addons==0.17.1
 conda install cudnn==8.2.1
 pip install imgaug
 pip install pandas
+pip install pyyaml
 ```
 
 ### Train a model with ADPT
