@@ -12,14 +12,24 @@ Furthermore, our team applied ADPT to end-to-end multi-animal identity-pose sync
 
 This tool provides Python scripts for training and predicting behavior videos. Users can simply open the corresponding environment and run the provided code to start training and predicting.
 
+### Training
+- step 1 Modify config.yaml.
+- step 2 Open a terminal and enter the folder where the train.py is located.
+- step 3 Run train.py and wait for the training to complete.
+```bash
+python train.py
+```
+- step 4 The trained model will be saved in the subfolder (model/ADPT/_shuffle_num/cp.ckpt)
+
 ### Dependencies
 
-- Python 3.9
-- TensorFlow 2.9.1
+- python 3.9
+- tensorflow 2.9.1
+- tensorflow-addons 0.17.1
 - cudnn
 - imgaug
-- OpenCV
-- Matplotlib
+- opencv
+- matplotlib
 
 ### Data Preparation
 
