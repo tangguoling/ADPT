@@ -28,6 +28,7 @@ def configuration(result):
     WARMUP_EPOCHS = result['WARMUP_EPOCHS']
     TrainingFraction = result['TrainingFraction']
     Tranfer_LR = eval(result['Tranfer_LR'])
+    early_stop = result['early_stop']
     
     NUM_KEYPOINT = result['NUM_KEYPOINT']
     NUM_KEYPOINTS = result['NUM_KEYPOINT'] * 2
@@ -36,4 +37,4 @@ def configuration(result):
     delta = result['delta']
     bodyparts = result['bodyparts']
     kp_con = [{'name': i, 'bodypart': eval(skeleton)} for i, skeleton in enumerate(result['skeleton'])]
-    return IMG_SIZE_H_ori, IMG_SIZE_W_ori, global_scale, IMG_SIZE_H, IMG_SIZE_W, BATCH_SIZE, variation, delta, initial_learning_rate, alpha,EPOCHS, WARMUP_EPOCHS, NUM_KEYPOINT, NUM_KEYPOINTS, shuffle_num, TrainingFraction, Tranfer_LR, channels,IMG_DIR, JSON, kp_con, initial_weight, bodyparts
+    return IMG_SIZE_H_ori, IMG_SIZE_W_ori, global_scale, IMG_SIZE_H, IMG_SIZE_W, BATCH_SIZE, variation, delta, initial_learning_rate, alpha,EPOCHS, WARMUP_EPOCHS, NUM_KEYPOINT, NUM_KEYPOINTS, shuffle_num, TrainingFraction, Tranfer_LR, channels,IMG_DIR, JSON, kp_con, initial_weight, bodyparts, early_stop
