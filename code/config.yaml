@@ -24,7 +24,7 @@ EPOCHS: 300
 WARMUP_EPOCHS: 10
 TrainingFraction: 0.95
 Tranfer_LR: 1e-3
-early_stop: False
+early_stop: True
 
 NUM_KEYPOINT: 16
 
