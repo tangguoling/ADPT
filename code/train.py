@@ -12,7 +12,7 @@ from core.data_aug import data_augmentation
 import yaml
 from config.config_training import configuration
 if __name__ == '__main__':
-    print('\nWellcome to use ADPT v1.1.0 for keypoints detection.')
+    print('\nWellcome to use ADPT v1.1.1 for keypoints detection.')
     print('\nTraining configuration:')
     with open('config.yaml', 'r', encoding='utf-8') as f:
         result = yaml.load(f.read(), Loader=yaml.FullLoader)
