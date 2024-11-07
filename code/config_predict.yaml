@@ -1,11 +1,12 @@
     # Video info
 Video_type: avi
-Video_path: I:/data/mouse
+Video_path: E:/sx/adpt_eval/single_animal/
+scorer: sx
 channels: 3
 save_predicted_video: True
 colors: 
-- (255,182,193)
-- (218,112,214)
+- (255,50,50)
+- (50,255,50)
 - (75,0,130)
 - (0,0,205)
 - (173,216,230)
@@ -21,7 +22,12 @@ colors:
 - (127,255,0)
 - (205,133,63)
 - (178,34,34)
+- (0,88,34)
+- (178,0,69)
+- (240,66,240)
+- (85,107,147)
+- (55,245,230)
 
     # Model info
-model_path: I:/train/model/ADPT/_10086/cp.ckpt
+model_path: singlemouse_model/_10086/cp.ckpt
 pcutoff: 0.2
