@@ -27,8 +27,7 @@ if __name__ == '__main__':
     # shuffle_num = 3
     save_path = '_' + str(shuffle_num)
     animal = 'singlemouse'
-    class_coe = [5,1,1]
-    model_rmse = train('ADPT',animal, save_path, IMG_SIZE_H_ori, IMG_SIZE_W_ori, global_scale, IMG_SIZE_H, IMG_SIZE_W, BATCH_SIZE, variation, delta, initial_learning_rate, alpha,EPOCHS, WARMUP_EPOCHS, NUM_KEYPOINT, NUM_KEYPOINTS, shuffle_num, TrainingFraction, Tranfer_LR, channels,IMG_DIR, JSON, kp_con, initial_weight, bodyparts,data_augmentation(),class_coe, early_stop, evaluate,num_classes,centre)
+    model_rmse = train('ADPT',animal, save_path, IMG_SIZE_H_ori, IMG_SIZE_W_ori, global_scale, IMG_SIZE_H, IMG_SIZE_W, BATCH_SIZE, variation, delta, initial_learning_rate, alpha,EPOCHS, WARMUP_EPOCHS, NUM_KEYPOINT, NUM_KEYPOINTS, shuffle_num, TrainingFraction, Tranfer_LR, channels,IMG_DIR, JSON, kp_con, initial_weight, bodyparts,data_augmentation(), early_stop, evaluate,num_classes,centre)
     
     for idx, bodypart in enumerate(bodyparts):
         print('RMSE (' + bodypart + '): ', model_rmse[0][idx])
