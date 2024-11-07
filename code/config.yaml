@@ -1,6 +1,6 @@
     # Annotation info
-IMG_DIR: J:/dataset/pose_data/labeled-data
-JSON: D:/ADPT/code/mouse.json
+IMG_DIR: D:/ADPT/data/mouse/labeled-data
+JSON: D:/ADPT/data/mouse/mouse.json
 
     # Image info
 IMG_SIZE_H_ori: 964
@@ -14,8 +14,8 @@ IMG_SIZE_W: 640
 
     # Model info
 initial_weight: None
-shuffle_num: 10086
-
+shuffle_num: 117481
+early_stop: True
 BATCH_SIZE: 8
 variation: 17 / 8
 initial_learning_rate: 1e-3
@@ -24,11 +24,10 @@ EPOCHS: 300
 WARMUP_EPOCHS: 10
 TrainingFraction: 0.95
 Tranfer_LR: 1e-3
-early_stop: True
-
 NUM_KEYPOINT: 16
-
+centre: 3
 delta: 0.025
+num_classes: 1
 bodyparts: 
 - nose
 - left_ear
