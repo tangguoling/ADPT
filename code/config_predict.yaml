@@ -29,5 +29,5 @@ colors:
 - (55,245,230)
 
     # Model info
-model_path: singlemouse_model/_10086/cp.ckpt
+model_path: singlemouse_model/_117481/cp.ckpt
 pcutoff: 0.2
