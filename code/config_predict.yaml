@@ -1,7 +1,7 @@
     # Video info
 Video_type: avi
 Video_path: D:/mouse/
-scorer: sx
+scorer: tang
 channels: 3
 save_predicted_video: True
 colors: 
