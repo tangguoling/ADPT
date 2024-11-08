@@ -1,6 +1,6 @@
     # Video info
 Video_type: avi
-Video_path: E:/sx/adpt_eval/single_animal/
+Video_path: D:/mouse/
 scorer: sx
 channels: 3
 save_predicted_video: True
