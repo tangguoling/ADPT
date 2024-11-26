@@ -16,6 +16,8 @@ This tool provides Python scripts for training and predicting behavior videos. U
 ```bash
 conda create -n ADPT python==3.9
 conda activate ADPT
+pip install numpy==1.26.3
+pip install scikit-image==0.19.3
 pip install tensorflow==2.9.1
 pip install tensorflow-addons==0.17.1
 conda install cudnn==8.2.1
