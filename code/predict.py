@@ -12,7 +12,7 @@ import yaml
 from config.config_training import configuration
 from config.config_predicting import configuration_predict
 if __name__ == '__main__':
-    json_file = 'config_singlemouse.yaml'
+    json_file = 'config.yaml'
     print('\nWellcome to use ADPT v1.2.1 for keypoints detection.')
     with open(json_file, 'r', encoding='utf-8') as f:
         result = yaml.load(f.read(), Loader=yaml.FullLoader)
