@@ -27,7 +27,7 @@ Tranfer_LR: 1e-3
 NUM_KEYPOINT: 16
 centre: 3
 delta: 0.025
-num_classes: 1
+num_classes: 1 #number of animal 
 bodyparts: 
 - nose
 - left_ear
