@@ -6,7 +6,7 @@
 
 The analysis results demonstrate that ADPT significantly reduces body point drifting in animal pose estimation and outperforms existing deep learning methods such as [DeepLabCut](https://github.com/DeepLabCut/DeepLabCut), [SLEAP](https://github.com/talmolab/sleap), and [DeepPoseKit](https://github.com/jgraving/DeepPoseKit). Additionally, ADPT's anti-drift tracking is unbiased across different individuals and video background conditions, ensuring consistency for subsequent behavioral analyses. In performance evaluations on public datasets, ADPT exhibited higher accuracy in tracking body points, superior performance metrics in terms of required training data, and inference speed.
 
-Furthermore, our team applied ADPT to end-to-end multi-animal identity-pose synchronized tracking, achieving over 90% accuracy in identity recognition. This end-to-end approach reduces computational costs compared to methods like [ma-DLC](https://github.com/DeepLabCut/DeepLabCut), [SIPEC](https://github.com/SIPEC-Animal-Data-Analysis/SIPEC), and [Social Behavior Atlas](https://github.com/YNCris/SBeA_release), potentially enabling real-time multi-animal behavior analysis.
+Furthermore, our team applied ADPT to end-to-end multi-animal identity-pose synchronized tracking, achieving over 90% accuracy in identity recognition. This end-to-end approach reduces computational costs compared to methods like [ma-DLC](https://github.com/DeepLabCut/DeepLabCut), [SIPEC](https://github.com/SIPEC-Animal-Data-Analysis/SIPEC), and [Social Behavior Atlas](https://github.com/YNCris/SBeA_release), potentially enabling real-time multi-animal behavior analysis. Now, the toolbox of ADPT has also been released at [ADPT-TOOLBOX](https://github.com/tangguoling/ADPT-TOOLBOX).
 
 ## Usage
 
@@ -57,10 +57,20 @@ We offer a shared training [dataset and videos](data/link.md) for testing purpos
 
 If you use this project in your research, please cite our paper:
 
-[Anti-drift pose tracker (ADPT): A transformer-based network for robust animal pose estimation cross-species](https://doi.org/10.7554/eLife.95709.2)  
+[Anti-drift pose tracker (ADPT): A transformer-based network for robust animal pose estimation cross-species](https://doi.org/10.7554/eLife.95709.2
+        
+        
+        
+        )  
 Authors: Guoling Tang, Yaning Han, Xing Sun, Ruonan Zhang, Ming-Hu Han, Quanying Liu, Pengfei Wei  
 Published: March 2025  
-DOI: [10.7554/eLife.95709.2](https://doi.org/10.7554/eLife.95709.2)
+DOI: [10.7554/eLife.95709.2
+        
+        ](https://doi.org/10.7554/eLife.95709.2
+        
+        
+        
+        )
 
 
 ## License
