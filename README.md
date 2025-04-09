@@ -9,7 +9,7 @@ The analysis results demonstrate that ADPT significantly reduces body point drif
 Furthermore, our team applied ADPT to end-to-end multi-animal identity-pose synchronized tracking, achieving over 90% accuracy in identity recognition. This end-to-end approach reduces computational costs compared to methods like [ma-DLC](https://github.com/DeepLabCut/DeepLabCut), [SIPEC](https://github.com/SIPEC-Animal-Data-Analysis/SIPEC), and [Social Behavior Atlas](https://github.com/YNCris/SBeA_release), potentially enabling real-time multi-animal behavior analysis. 
 ## Usage
 
-This tool provides Python scripts for training and predicting behavior videos. Users can simply open the corresponding environment and run the provided code to start training and predicting.  You may need an NVIDIA GPU (RTX2080TI or better) and updated drivers.Now, the toolbox of ADPT has also been released at [ADPT-TOOLBOX](https://github.com/tangguoling/ADPT-TOOLBOX).
+This tool provides Python scripts for training and predicting behavior videos. Users can simply open the corresponding environment and run the provided code to start training and predicting.  You may need an NVIDIA GPU (RTX2080TI or better) and updated drivers. Now, the toolbox of ADPT has also been released at [ADPT-TOOLBOX](https://github.com/tangguoling/ADPT-TOOLBOX).
 
   
 ### Configure the ADPT virtual environment
