@@ -30,7 +30,7 @@ pip install tqdm
 ### Train a model with ADPT
 - step 1 Modify config.yaml. You may need to modify the image size information, NUM_KEYPOINT, bodyparts and skeleton to correspond to your project. Model information allows you to control model training details. 
 - step 2 Open a terminal and enter the folder where the train.py is located. Please make sure that config.yaml is under the same folder of train.py because script would read training configuration from config.py.
-- step 3 Run train.py and wait for the training to complete. It may take hours for training a robust enough model. The model may not have been fully trained when the epoch is less than half of EPOCHS or 100 epochs, please retrain the model.
+- step 3 Run train.py and wait for the training to complete. It may take hours for training a robust enough model. The model may not have been fully trained when the epoch is less than half of EPOCHS or 100 epochs, please modify shuffle_num and retrain the model.
 ```bash
 python train.py
 ```
