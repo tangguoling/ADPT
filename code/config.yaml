@@ -15,7 +15,7 @@ IMG_SIZE_W: 640
     # Model info
 initial_weight: None
 shuffle_num: 117481
-early_stop: True
+early_stop: True #It should be set as 'False' for multi-animal tracking
 BATCH_SIZE: 8
 variation: 17 / 8
 initial_learning_rate: 1e-3
