@@ -25,7 +25,7 @@ WARMUP_EPOCHS: 10
 TrainingFraction: 0.95
 Tranfer_LR: 1e-3
 NUM_KEYPOINT: 16
-centre: 3
+centre: 3 #Index of body center keypoint.
 delta: 0.025
 num_classes: 1 #number of animal 
 bodyparts: 
