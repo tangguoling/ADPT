@@ -1,3 +1,4 @@
+![Logo](https://github.com/tangguoling/ADPT-TOOLBOX/blob/main/code/logo.png)
 # Anti-Drift Pose Tracker (ADPT): A transformer-based network for robust animal pose estimation cross-species
 
 [![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
@@ -57,10 +58,20 @@ We offer a shared training [dataset and videos](data/link.md) for testing purpos
 
 If you use this project in your research, please cite our paper:
 
-[Anti-drift pose tracker (ADPT), A transformer-based network for robust animal pose estimation cross-species](https://doi.org/10.7554/eLife.95709)  
+[Anti-drift pose tracker (ADPT), A transformer-based network for robust animal pose estimation cross-species](https://doi.org/10.7554/eLife.95709
+        
+        
+        
+        )  
 Authors: Guoling Tang, Yaning Han, Xing Sun, Ruonan Zhang, Ming-Hu Han, Quanying Liu, Pengfei Wei  
 Published: March 2025  
-DOI: [10.7554/eLife.95709](https://doi.org/10.7554/eLife.95709)
+DOI: [10.7554/eLife.95709
+        
+        ](https://doi.org/10.7554/eLife.95709
+        
+        
+        
+        )
 
 
 ## License
