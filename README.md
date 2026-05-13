@@ -18,6 +18,7 @@ This tool provides Python scripts for training and predicting behavior videos. U
 conda create -n ADPT python==3.9
 conda activate ADPT
 pip install numpy==1.26.3
+pip install opencv-python==4.11.0.86
 pip install scikit-image==0.19.3
 pip install tensorflow==2.9.1
 pip install tensorflow-addons==0.17.1
@@ -58,10 +59,16 @@ We offer a shared training [dataset and videos](data/link.md) for testing purpos
 
 If you use this project in your research, please cite our paper:
 
-[Anti-drift pose tracker (ADPT), A transformer-based network for robust animal pose estimation cross-species](https://doi.org/10.7554/eLife.95709)  
+[Anti-drift pose tracker (ADPT), A transformer-based network for robust animal pose estimation cross-species](https://doi.org/10.7554/eLife.95709
+        
+        )  
 Authors: Guoling Tang, Yaning Han, Xing Sun, Ruonan Zhang, Ming-Hu Han, Quanying Liu, Pengfei Wei  
 Published: March 2025  
-DOI: [10.7554/eLife.95709](https://doi.org/10.7554/eLife.95709)
+DOI: [10.7554/eLife.95709
+        
+        ](https://doi.org/10.7554/eLife.95709
+        
+        )
 
 
 ## License
