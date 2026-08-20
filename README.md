@@ -43,13 +43,13 @@ Each experiment lives in a self-contained project with its runtime, configuratio
 
 Process one to four synchronized videos or camera streams, control buffering and display independently, optionally save annotated video, and write multi-view tracking results to H5.
 
-![Four-view ADPT inference](docs/images/multiview-inference.png)
+<p align="center"><img src="docs/images/multiview-inference.png" height="360" alt="Four-view ADPT inference"></p>
 
 ### Integrated annotation
 
 Extract frames, label multiple animals and body points, zoom and pan, and merge annotations from every labeled-data folder into one training dataset.
 
-![Integrated body-point annotation](docs/images/annotation.png)
+<p align="center"><img src="docs/images/annotation.png" height="360" alt="Integrated body-point annotation"></p>
 
 - Left click: label the current point.
 - Right drag: move an existing point.
@@ -62,13 +62,13 @@ Moving to another image or clearing a frame resets the labeling sequence to the 
 
 Edit the training YAML, choose images, annotations, and initial weights, then monitor batch loss, validation loss, epoch progress, ETA, logs, and model structure without blocking the GUI.
 
-![ADPT training monitor](docs/images/training.png)
+<p align="center"><img src="docs/images/training.png" height="360" alt="ADPT training monitor"></p>
 
 ### Synchronized 2D/3D visualization
 
 Select calibrated views, triangulate high-confidence observations, level the ground plane, inspect the 3D skeleton, and keep the source 2D frames synchronized while scrubbing or playing the timeline.
 
-![Synchronized 3D reconstruction](docs/images/3d-visualization.png)
+<p align="center"><img src="docs/images/3d-visualization.png" height="360" alt="Synchronized 3D reconstruction"></p>
 
 ## Main capabilities
 
