@@ -1,0 +1,65 @@
+ADPT TOOLBOX RESEARCH EDITION LICENSE
+
+Copyright (c) 2026 ADPT copyright holders. All rights reserved.
+
+1. Research-use permission
+
+Subject to this License, the copyright holders grant individuals and
+non-commercial research or educational institutions a limited, non-exclusive,
+non-transferable, royalty-free right to install and use the ADPT Toolbox
+Research Edition solely for non-commercial scientific research, teaching, and
+academic evaluation.
+
+An authorized institution may make a reasonable number of internal copies for
+its employees, students, and visiting researchers working on the same
+non-commercial activities. It may publish scientific results, figures, derived
+measurements, and output data produced with the Software. Publications should
+cite the ADPT paper identified in the accompanying README.
+
+2. Restrictions
+
+Unless the copyright holders give separate written permission, you may not:
+
+* use the Software for commercial purposes, paid services, contract research
+  performed primarily for a commercial entity, clinical use, or inclusion in
+  a commercial product or service;
+* sell, rent, sublicense, publish, upload, or otherwise distribute the Software
+  or provide it to anyone outside your authorized institution;
+* reverse engineer, decompile, disassemble, or attempt to discover protected
+  source code, except to the limited extent that applicable law expressly
+  permits despite this restriction;
+* remove or alter copyright, license, attribution, or integrity notices; or
+* use the ADPT name or its authors' names to endorse a product or service.
+
+Use by a for-profit organization is not automatically permitted merely because
+the activity is described as research. Contact the copyright holders for
+commercial or broader distribution rights.
+
+3. Ownership and third-party components
+
+The Software is licensed, not sold. The copyright holders retain all rights not
+expressly granted here. Third-party software and libraries are governed by
+their own license terms, as identified in THIRD_PARTY_NOTICES.md. This License
+does not restrict rights granted directly by those third-party licenses.
+
+4. Research software and disclaimer
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, ACCURACY, AND NON-INFRINGEMENT. THE SOFTWARE IS RESEARCH SOFTWARE AND
+MUST NOT BE USED AS THE SOLE BASIS FOR CLINICAL, SAFETY-CRITICAL, OR REGULATED
+DECISIONS.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS WILL NOT BE LIABLE FOR ANY CLAIM, LOSS, OR OTHER LIABILITY ARISING
+FROM THE SOFTWARE OR ITS USE.
+
+5. Termination
+
+This License terminates automatically if you materially breach its terms. Upon
+termination, you must stop using the Software and delete all copies under your
+control. Sections 2 through 5 survive termination.
+
+By installing, copying, or using the ADPT Toolbox Research Edition, you indicate
+your acceptance of this License. If you do not accept it, do not install, copy,
+or use the Software.

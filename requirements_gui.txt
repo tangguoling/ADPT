@@ -1,0 +1,32 @@
+opencv-python<4.12
+pillow
+pyyaml
+matplotlib
+# imgaug still uses np.sctypes, which NumPy 2.x removed.
+numpy==1.26.4
+# Install a CUDA 12.8 TensorFlow 2.21 wheel compiled for sm_120 before this
+# file. The official CUDA 12.5 wheel cannot execute on RTX 5090.
+keras>=3.10,<4
+# XLA-generated kernels need a ptxas that understands Blackwell CC 12.0.
+nvidia-cuda-nvcc-cu12==12.8.93; platform_system == "Linux"
+# Match the CUDA 12.8.1 / cuDNN 9.8 Blackwell TensorFlow wheel. Without the
+# cuDNN runtime, Conv2D fails with "No DNN in stream executor".
+nvidia-cuda-runtime-cu12==12.8.90; platform_system == "Linux"
+nvidia-cuda-cupti-cu12==12.8.90; platform_system == "Linux"
+nvidia-cublas-cu12==12.8.4.1; platform_system == "Linux"
+nvidia-cudnn-cu12==9.8.0.87; platform_system == "Linux"
+imgaug
+# Keep the scientific stack on its NumPy 1.26-compatible generation. Newer
+# 2026 releases require NumPy 2.x, while imgaug still requires legacy aliases.
+scipy==1.14.1
+scikit-image==0.24.0
+tifffile==2024.9.20
+pandas
+tables
+tqdm
+pyrealsense2
+pydot
+# Optional full-quality 3D behavior embedding. The GUI falls back to
+# NumPy PCA/K-means when these packages are unavailable.
+umap-learn
+hdbscan
