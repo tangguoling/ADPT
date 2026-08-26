@@ -1,11 +1,12 @@
+tensorflow[and-cuda]==2.21.0; platform_system == "Linux" and platform_machine == "x86_64"
+tensorflow==2.21.0; platform_system == "Windows"
+tensorflow==2.21.0; platform_system == "Darwin"
 opencv-python<4.12
 pillow
 pyyaml
 matplotlib
 # imgaug still uses np.sctypes, which NumPy 2.x removed.
 numpy==1.26.4
-# Install a CUDA 12.8 TensorFlow 2.21 wheel compiled for sm_120 before this
-# file. The official CUDA 12.5 wheel cannot execute on RTX 5090.
 keras>=3.10,<4
 # XLA-generated kernels need a ptxas that understands Blackwell CC 12.0.
 nvidia-cuda-nvcc-cu12==12.8.93; platform_system == "Linux"
@@ -26,6 +27,7 @@ tables
 tqdm
 pyrealsense2
 pydot
+pyserial
 # Optional full-quality 3D behavior embedding. The GUI falls back to
 # NumPy PCA/K-means when these packages are unavailable.
 umap-learn

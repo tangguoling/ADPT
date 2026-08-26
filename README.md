@@ -154,10 +154,17 @@ Ubuntu/WSL:
 
 ```bash
 sudo apt update
-sudo apt install -y python3.12-venv python3-pip graphviz libgl1 libglib2.0-0
+sudo apt install -y python3.12-venv python3-pip python3-tk graphviz libgl1 libglib2.0-0
 python3.12 -m venv ~/venvs/adpt
 source ~/venvs/adpt/bin/activate
 python -m pip install --upgrade pip setuptools wheel
+```
+
+`tkinter` is a system component, not a pip package. On Windows, enable
+**tcl/tk and IDLE** in the python.org Python installer. Verify with:
+
+```bash
+python -c "import tkinter; print('Tk', tkinter.TkVersion)"
 ```
 
 Windows PowerShell:
