@@ -11,30 +11,6 @@
   <a href="https://doi.org/10.7554/eLife.95709"><img src="https://img.shields.io/badge/eLife-10.7554%2FeLife.95709-CB1B45" alt="ADPT paper"></a>
 </p>
 
-## Download the Research Edition
-
-**Most users should download the compiled Research Edition from the
-[v2.0.0-research release](https://github.com/tangguoling/ADPT/releases/tag/v2.0.0-research),
-instead of downloading GitHub's source archive.**
-
-For Python 3.12 on Ubuntu, native Linux, or Windows 11 through WSL2, download:
-
-[`adpt-toolbox-2.0.0-research-cp312-linux-x86_64-dependencies-fixed.zip`](https://github.com/tangguoling/ADPT/releases/download/v2.0.0-research/adpt-toolbox-2.0.0-research-cp312-linux-x86_64-dependencies-fixed.zip)
-
-Also download its optional
-[`SHA-256 checksum`](https://github.com/tangguoling/ADPT/releases/download/v2.0.0-research/adpt-toolbox-2.0.0-research-cp312-linux-x86_64-dependencies-fixed.zip.sha256)
-to verify the archive.
-
-This is currently the recommended package for both ordinary Linux GPUs and
-RTX 3090/4090/5090 systems. RTX 5090 users should run it under Linux or WSL2
-and execute `python verify_blackwell.py` before training.
-
-> Do not choose GitHub's automatically generated **Source code (zip)** or
-> **Source code (tar.gz)** to run ADPT. Those files are repository snapshots
-> and do not contain the complete compiled Research Edition runtime. The
-> `linux-x86_64` package contains `.so` binaries and cannot run in native
-> Windows Python; Windows users should use it inside WSL2. `cp312` means that
-> Python 3.12 is required.
 
 ADPT Toolbox is a project-based desktop application for animal pose experiments. It links video acquisition, body-point annotation, ADPT model training, real-time or offline multi-view inference, quantitative 2D analysis, camera calibration, 3D reconstruction, synchronized visualization, and exploratory behavior mapping.
 
@@ -162,6 +138,30 @@ The exploratory pages accept multiple reconstructed 3D CSV files. Samples enter 
 UMAP and HDBSCAN are used when installed; PCA and K-means provide a deterministic fallback. Exports include a sample-level embedding CSV and per-dataset/per-animal `_occupancy.csv` summary.
 
 > These are independent, paper-inspired ADPT modules. They are not official implementations of, affiliated with, or endorsed by the referenced packages. The social page does not reproduce SBeA's pose/identity networks, DTAK/ResMLP mapper, or watershed detector. Use original packages for exact reproduction.
+## Download the Research Edition
+
+**Most users should download the compiled Research Edition from the
+[v2.0.0-research release](https://github.com/tangguoling/ADPT/releases/tag/v2.0.0-research),
+instead of downloading GitHub's source archive.**
+
+For Python 3.12 on Ubuntu, native Linux, or Windows 11 through WSL2, download:
+
+[`adpt-toolbox-2.0.0-research-cp312-linux-x86_64-dependencies-fixed.zip`](https://github.com/tangguoling/ADPT/releases/download/v2.0.0-research/adpt-toolbox-2.0.0-research-cp312-linux-x86_64-dependencies-fixed.zip)
+
+Also download its optional
+[`SHA-256 checksum`](https://github.com/tangguoling/ADPT/releases/download/v2.0.0-research/adpt-toolbox-2.0.0-research-cp312-linux-x86_64-dependencies-fixed.zip.sha256)
+to verify the archive.
+
+This is currently the recommended package for both ordinary Linux GPUs and
+RTX 3090/4090/5090 systems. RTX 5090 users should run it under Linux or WSL2
+and execute `python verify_blackwell.py` before training.
+
+> Do not choose GitHub's automatically generated **Source code (zip)** or
+> **Source code (tar.gz)** to run ADPT. Those files are repository snapshots
+> and do not contain the complete compiled Research Edition runtime. The
+> `linux-x86_64` package contains `.so` binaries and cannot run in native
+> Windows Python; Windows users should use it inside WSL2. `cp312` means that
+> Python 3.12 is required.
 
 ## Installation
 
