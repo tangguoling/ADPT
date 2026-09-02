@@ -11,6 +11,31 @@
   <a href="https://doi.org/10.7554/eLife.95709"><img src="https://img.shields.io/badge/eLife-10.7554%2FeLife.95709-CB1B45" alt="ADPT paper"></a>
 </p>
 
+## Download the Research Edition
+
+**Most users should download the compiled Research Edition from the
+[v2.0.0-research release](https://github.com/tangguoling/ADPT/releases/tag/v2.0.0-research),
+instead of downloading GitHub's source archive.**
+
+For Python 3.12 on Ubuntu, native Linux, or Windows 11 through WSL2, download:
+
+[`adpt-toolbox-2.0.0-research-cp312-linux-x86_64-dependencies-fixed.zip`](https://github.com/tangguoling/ADPT/releases/download/v2.0.0-research/adpt-toolbox-2.0.0-research-cp312-linux-x86_64-dependencies-fixed.zip)
+
+Also download its optional
+[`SHA-256 checksum`](https://github.com/tangguoling/ADPT/releases/download/v2.0.0-research/adpt-toolbox-2.0.0-research-cp312-linux-x86_64-dependencies-fixed.zip.sha256)
+to verify the archive.
+
+This is currently the recommended package for both ordinary Linux GPUs and
+RTX 3090/4090/5090 systems. RTX 5090 users should run it under Linux or WSL2
+and execute `python verify_blackwell.py` before training.
+
+> Do not choose GitHub's automatically generated **Source code (zip)** or
+> **Source code (tar.gz)** to run ADPT. Those files are repository snapshots
+> and do not contain the complete compiled Research Edition runtime. The
+> `linux-x86_64` package contains `.so` binaries and cannot run in native
+> Windows Python; Windows users should use it inside WSL2. `cp312` means that
+> Python 3.12 is required.
+
 ADPT Toolbox is a project-based desktop application for animal pose experiments. It links video acquisition, body-point annotation, ADPT model training, real-time or offline multi-view inference, quantitative 2D analysis, camera calibration, 3D reconstruction, synchronized visualization, and exploratory behavior mapping.
 
 ADPT（Anti-Drift Pose Tracker）工具箱是一套面向动物姿态与行为研究的桌面软件。一个项目内即可完成视频采集、数据标注、模型训练、多视角二维追踪、相机标定、三维重建、传统运动学分析和批量无监督行为分析。
@@ -140,6 +165,10 @@ UMAP and HDBSCAN are used when installed; PCA and K-means provide a deterministi
 
 ## Installation
 
+Download and extract the Research Edition listed above, then run the commands
+below from the extracted directory. Cloning this repository is intended for
+development and does not replace the compiled runtime in the release package.
+
 ### Supported release targets
 
 - CPython 3.12, Windows x86-64 or Linux/WSL x86-64.
@@ -160,8 +189,8 @@ source ~/venvs/adpt/bin/activate
 python -m pip install --upgrade pip setuptools wheel
 ```
 
-`tkinter` is a system component, not a pip package. On Windows, enable
-**tcl/tk and IDLE** in the python.org Python installer. Verify with:
+`tkinter` is a Python system component rather than a pip package. On Windows,
+install Python from python.org with **tcl/tk and IDLE** enabled. Verify it with:
 
 ```bash
 python -c "import tkinter; print('Tk', tkinter.TkVersion)"
@@ -175,11 +204,18 @@ py -3.12 -m venv $env:USERPROFILE\venvs\adpt
 python -m pip install --upgrade pip setuptools wheel
 ```
 
-Install a TensorFlow build compatible with the GPU first, then from the unpacked release directory:
+Install the complete runtime from the unpacked release directory:
 
 ```bash
 pip install -r requirements_gui.txt
 pip install -e . --no-deps
+```
+
+Alternatively, `pip install -e .` installs the same required dependencies from
+`pyproject.toml`. Intel RealSense is optional:
+
+```bash
+pip install -e ".[realsense]"
 ```
 
 ### NVIDIA GPUs
@@ -191,7 +227,11 @@ nvidia-smi
 python -c "import tensorflow as tf; print(tf.__version__); print(tf.config.list_physical_devices('GPU'))"
 ```
 
-RTX 5090/Blackwell has compute capability `sm_120`. Use a trusted TensorFlow/Keras build with CUDA 12.8-or-newer Blackwell support and matching cuDNN 9. A wheel that only detects the GPU can still fail with `CUDA_ERROR_INVALID_PTX`, `CUDA_ERROR_INVALID_HANDLE`, or `No DNN in stream executor`.
+RTX 5090/Blackwell has compute capability `sm_120`. The supplied dependency
+set installs TensorFlow 2.21 and its Linux CUDA extra. A wheel that only detects
+the GPU can still fail with `CUDA_ERROR_INVALID_PTX`, `CUDA_ERROR_INVALID_HANDLE`,
+or `No DNN in stream executor`, so run the verification below. TensorFlow 2.10+
+does not support NVIDIA GPU execution on native Windows; use WSL2 or Linux.
 
 ```bash
 python verify_blackwell.py
