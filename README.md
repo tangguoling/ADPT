@@ -146,7 +146,7 @@ instead of downloading GitHub's source archive.**
 
 For Python 3.12 on Ubuntu, native Linux, or Windows 11 through WSL2, download:
 
-[`adpt-toolbox-2.0.0-research-cp312-linux-x86_64-dependencies-fixed.zip`](https://github.com/tangguoling/ADPT/releases/download/v2.0.1-research/ADPT.Toolbox.Research.Edition.2.0.1.zip)
+[`ADPT.Toolbox.Research.Edition.2.0.1.zip`](https://github.com/tangguoling/ADPT/releases/download/v2.0.1-research/ADPT.Toolbox.Research.Edition.2.0.1.zip)
 
 Also download its optional
 [`SHA-256 checksum`](https://github.com/tangguoling/ADPT/releases/download/v2.0.0-research/adpt-toolbox-2.0.0-research-cp312-linux-x86_64-dependencies-fixed.zip.sha256)
