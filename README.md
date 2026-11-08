@@ -61,7 +61,7 @@ Moving to another image or clearing a frame resets the labeling sequence to the 
 
 ### Training monitor
 
-Edit the training YAML, choose images, annotations, and initial weights, then monitor batch loss, validation loss, epoch progress, ETA, logs, and model structure without blocking the GUI.
+Edit the training YAML, choose images, annotations, and initial weights, then monitor batch loss, validation loss, epoch progress, ETA, logs, and model structure without blocking the GUI. The model may not have been fully trained when the epoch is less than half of EPOCHS or 100 epochs, please modify shuffle_num and retrain the model.
 
 <p align="center"><img src="docs/images/training.png" height="360" alt="ADPT training monitor"></p>
 
